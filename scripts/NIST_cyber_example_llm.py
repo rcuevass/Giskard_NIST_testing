@@ -64,7 +64,7 @@ loader = PyPDFLoader("https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf")
 db = FAISS.from_documents(loader.load_and_split(text_splitter), OpenAIEmbeddings())
 
 # Prepare QA chain
-PROMPT_TEMPLATE = """You are the Artificial Intelligence Risk Management Assistant, a helpful AI assistant prototyped by JSOC Analytics.
+PROMPT_TEMPLATE = """You are the Artificial Intelligence Risk Management Assistant, a helpful AI assistant prototyped for cyber purposes.
 Your task is to answer basic questions on GenAI Risk Management Framework.
 You will be given a question and relevant excerpts from the NIST Trustworthy and Responsible AI
 NIST AI 600-1 Framework (2024).
